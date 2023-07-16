@@ -10,14 +10,14 @@ import (
 
 func main() {
 	// Read entire file
-	f1, err1 := ioutil.ReadFile("readme.txt")
+	f1, err1 := ioutil.ReadFile("read-me.txt")
 	if err1 != nil {
 		fmt.Println("Error")
 	}
 	fmt.Println(string(f1))
 
 	// Read a chunk of a file
-	f2, err2 := os.Open("readme.txt")
+	f2, err2 := os.Open("read-me.txt")
 	if err2 != nil {
 		fmt.Println("Error  opening the file.")
 	}
@@ -39,7 +39,7 @@ func main() {
 	}
 
 	// Read a file line by line
-	f4, err4 := os.Open("readme.txt")
+	f4, err4 := os.Open("read-me.txt")
 	if err4 != nil {
 		fmt.Println(err4)
 	}
@@ -56,7 +56,7 @@ func main() {
 	f4.Close()
 
 	// Read file word by word
-	f5, err5 := os.Open("readme.txt")
+	f5, err5 := os.Open("read-me.txt")
 	if err5 != nil {
 		fmt.Println(err5)
 	}
